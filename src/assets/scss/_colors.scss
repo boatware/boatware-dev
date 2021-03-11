@@ -1,0 +1,204 @@
+$color_transparency: 0.5;
+
+// Override of bootstraps color definitions
+// Base grayscale colors definitions
+$white: rgba(255, 255, 255, 1) !default;
+$white-transparent: rgba(255, 255, 255, $color_transparency) !default;
+$gray-100: rgba(248, 249, 250, 1) !default;
+$gray-100-transparent: rgba(248, 249, 250, $color_transparency) !default;
+$gray-200: rgba(233, 236, 239, 1) !default;
+$gray-200-transparent: rgba(233, 236, 239, $color_transparency) !default;
+$gray-300: rgba(222, 226, 230, 1) !default;
+$gray-300-transparent: rgba(222, 226, 230, $color_transparency) !default;
+$gray-400: rgba(206, 212, 218, 1) !default;
+$gray-400-transparent: rgba(206, 212, 218, $color_transparency) !default;
+$gray-500: rgba(173, 181, 189, 1) !default;
+$gray-500-transparent: rgba(173, 181, 189, $color_transparency) !default;
+$gray-600: rgba(108, 117, 125, 1) !default;
+$gray-600-transparent: rgba(108, 117, 125, $color_transparency) !default;
+$gray-700: rgba(73, 80, 87, 1) !default;
+$gray-700-transparent: rgba(73, 80, 87, $color_transparency) !default;
+$gray-800: rgba(52, 58, 64, 1) !default;
+$gray-800-transparent: rgba(52, 58, 64, $color_transparency) !default;
+$gray-900: rgba(33, 37, 41, 1) !default;
+$gray-900-transparent: rgba(33, 37, 41, $color_transparency) !default;
+$black: rgba(0, 0, 0, 1) !default;
+$black-transparent: rgba(0, 0, 0, $color_transparency) !default;
+
+// Base colors definitions
+$blue: rgba(0, 123, 255, 1) !default;
+$blue-transparent: rgba(0, 123, 255, $color_transparency) !default;
+$indigo: rgba(102, 16, 242, 1) !default;
+$indigo-transparent: rgba(102, 16, 242, $color_transparency) !default;
+$purple: rgba(111, 66, 193, 1) !default;
+$purple-transparent: rgba(111, 66, 193, $color_transparency) !default;
+$pink: rgba(232, 62, 140, 1) !default;
+$pink-transparent: rgba(232, 62, 140, $color_transparency) !default;
+$red: rgba(220, 53, 69, 1) !default;
+$red-transparent: rgba(220, 53, 69, $color_transparency) !default;
+$orange: rgba(253, 126, 20, 1) !default;
+$orange-transparent: rgba(253, 126, 20, $color_transparency) !default;
+$yellow: rgba(255, 193, 7, 1) !default;
+$yellow-transparent: rgba(255, 193, 7, $color_transparency) !default;
+$green: rgba(40, 167, 69, 1) !default;
+$green-transparent: rgba(40, 167, 69, $color_transparency) !default;
+$teal: rgba(32, 201, 151, 1) !default;
+$teal-transparent: rgba(32, 201, 151, $color_transparency) !default;
+$cyan: rgba(23, 162, 184, 1) !default;
+$cyan-transparent: rgba(23, 162, 184, $color_transparency) !default;
+
+// Theme color default definitions
+$primary: $blue !default;
+$primary-transparent: $blue-transparent !default;
+$secondary: $gray-600 !default;
+$secondary-transparent: $gray-600-transparent !default;
+$success: $green !default;
+$success-transparent: $green-transparent !default;
+$info: $cyan !default;
+$info-transparent: $cyan-transparent !default;
+$warning: $yellow !default;
+$warning-transparent: $yellow-transparent !default;
+$danger: $red !default;
+$danger-transparent: $red-transparent !default;
+$light: $white !default;
+$light-transparent: $white-transparent !default;
+$dark: $gray-800 !default;
+$dark-transparent: $gray-800-transparent !default;
+
+// This table defines the theme colors (variant names)
+$theme-colors: () !default;
+$theme-colors: map-merge(
+                $theme-colors,
+                (
+                        'primary': $primary,
+                        'primary-transparent': $primary-transparent,
+                        'secondary': $secondary,
+                        'secondary-transparent': $secondary-transparent,
+                        'success': $success,
+                        'success-transparent': $success-transparent,
+                        'info': $info,
+                        'info-transparent': $info-transparent,
+                        'warning': $warning,
+                        'warning-transparent': $warning-transparent,
+                        'danger': $danger,
+                        'danger-transparent': $danger-transparent,
+                        'light': $light,
+                        'light-transparent': $light-transparent,
+                        'dark': $dark,
+                        'dark-transparent': $dark-transparent
+                )
+);
+
+$shadow-default: rgba(0, 0, 0, 0.5);
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-success {
+  background-color: $success !important;
+}
+
+.bg-info {
+  background-color: $info !important;
+}
+
+.bg-warning {
+  background-color: $warning !important;
+}
+
+.bg-danger {
+  background-color: $danger !important;
+}
+
+.bg-light {
+  background-color: $light !important;
+}
+
+.bg-dark {
+  background-color: $dark !important;
+}
+
+.bg-primary-transparent {
+  background-color: $primary-transparent !important;
+}
+
+.bg-secondary-transparent {
+  background-color: $secondary-transparent !important;
+}
+
+.bg-success-transparent {
+  background-color: $success-transparent !important;
+}
+
+.bg-info-transparent {
+  background-color: $info-transparent !important;
+}
+
+.bg-warning-transparent {
+  background-color: $warning-transparent !important;
+}
+
+.bg-danger-transparent {
+  background-color: $danger-transparent !important;
+}
+
+.bg-light-transparent {
+  background-color: $light-transparent !important;
+}
+
+.bg-dark-transparent {
+  background-color: $dark-transparent !important;
+}
+
+
+
+.primary-color {
+  color: $primary ;
+}
+
+.secondary-color {
+  color: $secondary ;
+}
+
+.success-color {
+  color: $success ;
+}
+
+.info-color {
+  color: $info ;
+}
+
+.warning-color {
+  color: $warning ;
+}
+
+.danger-color {
+  color: $danger ;
+}
+
+.light-color {
+  color: $light ;
+}
+
+.color-dark {
+  color: $dark ;
+}
+
+/**
+========================================================================================================================
+Links
+========================================================================================================================
+ */
+
+a {
+  color: $dark;
+
+  &.router-link-exact-active {
+    color: $primary;
+  }
+}
